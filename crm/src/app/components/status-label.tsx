@@ -17,6 +17,7 @@ export interface StatusLabelProps {
 }
 
 export default function StatusLabel({ children, status, disabled }: StatusLabelProps) {
+  console.log(process.env.CRM_SECRET_KEY)
   return (
     <span
       className={clsx(
